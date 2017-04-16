@@ -1,0 +1,53 @@
+MethodDecl Program'
+Program
+EPSILON
+int
+real
+string
+Type MethodDecl' id ( FormalParams ) Block
+main
+EPSILON
+FormalParam FormalParams'
+EPSILON
+, FormalParams
+Type id
+begin Statement end
+Block
+LocalVarDecl
+LocalVarDec'
+ReturnStmt
+IfStmt
+WriteStmt
+ReadStmt
+Type LocalVarDec'
+id LocalVarDec''
+;
+:= AssignStmt'
+Expression ;
+QString ;
+return Expression ;
+if ( BoolExpression ) Statement IfStmt'
+EPSILON
+else Statement
+write ( Expression , QString ) ;
+read ( id , QString ) ;
+MultiplicativeExpr Expression'
+EPSILON
+- Expression
++ Expression
+PrimaryExpr MultiplicativeExpr'
+EPSILON
+* MultiplicativeExpr
+/ MultiplicativeExpr
+num
+( Expression )
+id PrimaryExpr'
+EPSILON
+( ActualParams )
+Expression BoolExpression' Expression
+==
+!=
+Expression ActualParams'
+EPSILON
+EPSILON
+, ActualParams

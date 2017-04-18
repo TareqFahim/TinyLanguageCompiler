@@ -1,1 +1,1 @@
-id ( id , QString ) ; 
+int id ( int id , int id ) begin int id ; id := id * id - id * id ; return id ; end int main id ( ) begin int id ; read ( id , QString ) ; int id ; read ( id , QString ) ; int id ; id := id ( id , id ) + id ( id , id ) ; write ( id , QString ) ; end 

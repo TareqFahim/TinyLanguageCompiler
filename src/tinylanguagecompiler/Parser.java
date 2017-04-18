@@ -13,13 +13,14 @@ import java.util.logging.Logger;
 
 public class Parser {
 
-    int[][] pred_table = new int[30][27];
+    int[][] pred_table = new int[32][27];
     Map nonTerminalMap = new HashMap();
     Map terminalMap = new HashMap();
-    String[] productions = new String[54];
+    String[] productions = new String[60];
     Stack inputStack = new Stack();
     Stack parseStack = new Stack();
     int nonTerminalIndex, terminalIndex;
+    String parseStackPeek , inputStackPeek;
 
     public Parser() {
         File json = new File("json.txt");
@@ -58,7 +59,6 @@ public class Parser {
                 nonTerminalMap.put(line, index);
                 index++;
             }
-
         } catch (Exception ex) {
             Logger.getLogger(Parser.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -70,15 +70,15 @@ public class Parser {
         inputStack.push("$");
         parseStack.push("$");
         parseStack.push("Program");
-        
+
         String[] inputStrArray = line.split(" ");
         for (int i = inputStrArray.length - 1; i >= 0; i--) {
             inputStack.push(inputStrArray[i]);
         }
         while (!inputStack.empty()) {
-            String parseStackPeek = (String) parseStack.peek();
-            String inputStackPeek = (String) inputStack.peek();
-            System.out.print(parseStackPeek + "  --  ");
+            parseStackPeek = (String) parseStack.peek();
+            inputStackPeek = (String) inputStack.peek();
+            System.out.print(parseStackPeek +  "  --  ");
             System.out.println(inputStackPeek);
             if (parseStackPeek.equals("EPSILON")) {
                 parseStack.pop();
@@ -86,10 +86,10 @@ public class Parser {
             } else if (inputStackPeek.equals(parseStackPeek)) {
                 inputStack.pop();
                 parseStack.pop();
-                System.out.println("POPPPPPPPPPPPPPPPPPPPPPP");
+                System.out.println("POOOOOOOOOOOOOOOP");
             } else {
                 try {
-                    nonTerminalIndex = (int) nonTerminalMap.get(parseStackPeek);
+                    nonTerminalIndex = (int) nonTerminalMap.get(toAlpha(parseStackPeek));
                 } catch (Exception ex) {
                     error++;
                     parseStack.pop();
@@ -97,19 +97,22 @@ public class Parser {
                     continue;
                 }
                 try {
-                    terminalIndex = (int) terminalMap.get(inputStackPeek);
+                    String dd = toAlpha(inputStackPeek);
+                    if(!dd.equals(inputStackPeek))
+                        dd = inputStackPeek;
+                    terminalIndex = (int) terminalMap.get(dd);
                 } catch (Exception ex) {
                     error++;
                     inputStack.pop();
                     errorList.add("miss " + inputStackPeek);
                     continue;
                 }
-                if (pred_table[nonTerminalIndex][terminalIndex] == 55) {
+                if (pred_table[nonTerminalIndex][terminalIndex] == 59) {
                     error++;
                     inputStack.pop();
                     errorList.add("skip " + inputStackPeek);
                     continue;
-                } else if (pred_table[nonTerminalIndex][terminalIndex] == 54) {
+                } else if (pred_table[nonTerminalIndex][terminalIndex] == 58) {
                     parseStack.pop();
                     continue;
                 } else {
@@ -124,5 +127,8 @@ public class Parser {
 
         }
         return errorList;
+    }
+    private String toAlpha(String s) {
+        return s.replaceAll("[^a-zA-Z']", "");
     }
 }

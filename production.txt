@@ -1,53 +1,57 @@
-MethodDecl Program'
-Program
+﻿MethodDecl ProgramDash
+MethodDecl ProgramDash
 EPSILON
 int
 real
 string
-Type MethodDecl' id ( FormalParams ) Block
+Type MethodDeclDash id ( FormalParams ) Block
 main
 EPSILON
-FormalParam FormalParams'
+FormalParam FormalParamsDash
 EPSILON
-, FormalParams
+, FormalParam FormalParamsDash
 Type id
+EPSILON
 begin Statement end
+StatementDash StatementDashDash
 Block
 LocalVarDecl
-LocalVarDec'
+LocalVarDecDash
 ReturnStmt
 IfStmt
 WriteStmt
 ReadStmt
-Type LocalVarDec'
-id LocalVarDec''
+Statement
+EPSILON
+Type LocalVarDecDash
+id LocalVarDecDashDash
 ;
-:= AssignStmt'
+:= AssignStmtDash
 Expression ;
 QString ;
 return Expression ;
-if ( BoolExpression ) Statement IfStmt'
+if ( BoolExpression ) Statement IfStmtDash
 EPSILON
 else Statement
 write ( Expression , QString ) ;
 read ( id , QString ) ;
-MultiplicativeExpr Expression'
+MultiplicativeExpr ExpressionDash
 EPSILON
 - Expression
 + Expression
-PrimaryExpr MultiplicativeExpr'
+PrimaryExpr MultiplicativeExprDash
 EPSILON
 * MultiplicativeExpr
 / MultiplicativeExpr
 num
 ( Expression )
-id PrimaryExpr'
+id PrimaryExprDash
 EPSILON
 ( ActualParams )
-Expression BoolExpression' Expression
+Expression BoolExpressionDash Expression
 ==
 !=
-Expression ActualParams'
+Expression ActualParamsDash
 EPSILON
 EPSILON
-, ActualParams
+, Expression ActualParamsDash

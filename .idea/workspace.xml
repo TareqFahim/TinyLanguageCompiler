@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b8869f9-9d81-4045-a87f-b474b6bbdc97" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/built-jar.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/manifest.mf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nbproject/build-impl.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nbproject/genfiles.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nbproject/private/private.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nbproject/private/private.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nbproject/project.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nbproject/project.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inputCode.txt" afterPath="$PROJECT_DIR$/inputCode.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json.txt" afterPath="$PROJECT_DIR$/json.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/non-terminal.txt" afterPath="$PROJECT_DIR$/non-terminal.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outputLexical.txt" afterPath="$PROJECT_DIR$/outputLexical.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/production.txt" afterPath="$PROJECT_DIR$/production.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tinylanguagecompiler/Parser.java" afterPath="$PROJECT_DIR$/src/tinylanguagecompiler/Parser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp.txt" afterPath="$PROJECT_DIR$/tmp.txt" />
     </list>
     <ignored path="TinyLanguageCompiler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,8 +37,8 @@
       <file leaf-file-name="Parser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tinylanguagecompiler/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+            <state relative-caret-position="126">
+              <caret line="88" column="55" selection-start-line="88" selection-start-column="55" selection-end-line="88" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -436,14 +422,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3226891" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35462186" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35462186" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -475,14 +461,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tinylanguagecompiler/Parser.java</url>
-          <line>82</line>
-          <properties />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
@@ -578,8 +556,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tinylanguagecompiler/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        <state relative-caret-position="126">
+          <caret line="88" column="55" selection-start-line="88" selection-start-column="55" selection-end-line="88" selection-end-column="55" />
           <folding />
         </state>
       </provider>

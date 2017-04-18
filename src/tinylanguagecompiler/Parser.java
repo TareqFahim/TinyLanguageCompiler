@@ -86,7 +86,7 @@ public class Parser {
             } else if (inputStackPeek.equals(parseStackPeek)) {
                 inputStack.pop();
                 parseStack.pop();
-                System.out.println("POOOOOOOOOOOOOOOP");
+                System.out.println("POOOOOOOOOOOOOOOOOOP");
             } else {
                 try {
                     nonTerminalIndex = (int) nonTerminalMap.get(toAlpha(parseStackPeek));
